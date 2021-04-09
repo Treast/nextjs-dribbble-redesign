@@ -1,0 +1,72 @@
+.container {
+  position: relative;
+  padding: 36px 45px;
+  height: 100%;
+  width: 310px;
+  background-color: #45454d;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+  z-index: 10;
+}
+
+.logo {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.navigation {
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      a {
+        position: relative;
+        display: block;
+        color: rgba(#fff, 0.5);
+        letter-spacing: 0.5px;
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 15px 0 15px 45px;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.link--selected {
+  color: #444444 !important;
+  margin-bottom: 10px;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -15px;
+    right: -45px;
+    bottom: 0;
+    background-color: #fff;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-image: url('../../images/dribbble.svg');
+    height: 33px;
+    width: 33px;
+    background-size: contain;
+    transform: translate(0, -50%);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 110px;
+  width: 100%;
+  background-color: #ea4c89;
+  padding-left: 350px;
+}
+
+.actions {
+  padding: 0 40px;
+  > * {
+    margin: 0 6px;
+  }
+}
+
+.form {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  flex-grow: 1;
+  max-width: 700px;
+
+  input {
+    padding: 17px 25px;
+    box-shadow: 0 6px 12px rgba(#444444, 0.08);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  a {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translate(0, -50%);
+    padding: 9px;
+  }
+}

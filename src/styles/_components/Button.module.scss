@@ -1,0 +1,18 @@
+.button {
+  display: inline-flex;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 8px rgba(#444444, 0.08);
+
+  img:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.button--primary {
+  background-color: #ea4c89;
+  color: white;
+}
