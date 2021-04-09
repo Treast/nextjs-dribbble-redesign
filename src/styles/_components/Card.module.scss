@@ -1,0 +1,39 @@
+.card {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 0 20px 20px;
+  color: #45454d;
+  margin-bottom: 30px;
+
+  box-shadow: 6px 12px 24px rgba(#444444, 0.08);
+
+  img {
+    display: block;
+    height: calc(100% + 20px);
+    width: calc(100% + 40px);
+    margin: -20px -20px 0;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgba(#45454d, 0.6);
+    margin: 0;
+  }
+}

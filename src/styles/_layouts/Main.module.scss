@@ -1,0 +1,30 @@
+.container {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #f6f8fd;
+  flex-shrink: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 110px 30px 25px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 45px 0 0;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  row-gap: 30px;
+}
+
+.separator {
+  display: block;
+  margin: 25px 0;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(#444444, 0.1);
+  border: none;
+}
