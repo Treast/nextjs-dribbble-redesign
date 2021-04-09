@@ -12,9 +12,29 @@
   width: 100%;
   background-color: #ea4c89;
   padding-left: 350px;
+  z-index: 2;
+
+  @media (max-width: 1024px) {
+    padding-left: 270px;
+    a {
+      span {
+        font-size: 0;
+      }
+
+      img {
+        margin: 0 !important;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-left: 20px;
+  }
 }
 
 .actions {
+  display: flex;
+  align-items: center;
   padding: 0 40px;
   > * {
     margin: 0 6px;

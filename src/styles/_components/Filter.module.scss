@@ -16,4 +16,19 @@
       margin-right: 0;
     }
   }
+
+  @media (max-width: 1024px) {
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+
+    input {
+      width: 45%;
+      flex-grow: 1;
+      margin-bottom: 20px;
+    }
+
+    a {
+      margin-bottom: 20px;
+    }
+  }
 }

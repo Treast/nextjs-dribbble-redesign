@@ -4,7 +4,7 @@ import Button from './Button';
 export default function Filter() {
   return (
     <div className={styles.container}>
-      <Button style='primary' href='#' icon={require('@/images/icons/filter.svg')} />
+      <Button style='primary' href='#' icon={require('@/images/icons/filter.png')} />
       <input type='text' placeholder='Tags (ex: Android, iPhone, Web, UI, UX)' />
       <input type='text' placeholder='Colors (ex: enter hex code or select)' />
       <input type='text' placeholder='Made With' />

@@ -7,6 +7,11 @@
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 110px 30px 25px;
+
+  @media (max-width: 768px) {
+    // width: calc(100% + 240px);
+    // transform: translateX(-240px);
+  }
 }
 
 .list {
@@ -15,9 +20,21 @@
   margin: 45px 0 0;
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 30px;
   row-gap: 30px;
+
+  @media (min-width: 800px) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
 }
 
 .separator {
@@ -27,4 +44,8 @@
   width: 100%;
   background-color: rgba(#444444, 0.1);
   border: none;
+
+  @media (min-width: 1024px) {
+    margin: 10px 0 25px;
+  }
 }
